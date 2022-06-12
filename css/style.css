@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap");
 
 body {
   font-family: "Roboto Flex", sans-serif;
+  background: linear-gradient(to bottom right, rgb(132, 0, 255), rgb(0, 255, 170));
 }
 
 .card {
@@ -9,9 +10,10 @@ body {
   height: 100px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.548);
-  transition: all .3s;
+  backdrop-filter: blur(20px);
+  transition: all .4s;
   overflow: hidden;
-  border: 5px solid var(--bs-primary);
+  border: 5px solid var(--bs-light);
 }
 
 .card:hover {
